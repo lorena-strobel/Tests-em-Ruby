@@ -11,7 +11,11 @@ describe 'Matchers Verdadeiro / Falso' do
     expect(1.even?).to be false # par
   end
 
-   it 'be_falsey' do
+  it 'be_falsey' do
     expect(1.even?).to be_falsey # par 
+  end
+
+  it 'be_nil' do
+    expect(defined? x).to be_nil # testa se a variável existe
   end
 end
